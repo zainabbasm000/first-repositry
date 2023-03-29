@@ -1,0 +1,6 @@
+touch .gitignore // create file
+git init //inistlize git 
+git add . // for folders stging
+git commit 
+$ git remote add origin git@github.com:zainabbasm000/first-repositry.git
+$ git push origin master
