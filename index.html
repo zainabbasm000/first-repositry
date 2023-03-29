@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div><button>Sign in</button>
+
+        <div class="z-form-upper-div">
+            <div class="z-form-upper-outer-div"></div>
+            <div class="z-form-content">
+                
+                <div class="z-form-inner">
+                    <i class=" fa-solid fa-sharp fa-xmark z-close-form"></i>
+
+                    <div class="z-form-upper-outer">
+                        <div class="z-form-upper-outer-inner">
+                            <div class="z-tab-form">
+                                <a href="#" class="active" data-tabName="Sign In">Sign In</a>
+                                <a href="#" data-tabName="html">Sign Up</a>
+                            </div>
+                            <div class="z-form-contact">
+
+                                <form action="" class="z-form">
+
+                                    <div class="field">
+
+                                        <input type="email" class="email" placeholder="E-mail">
+                                        <i class="fa-solid fa-circle-user"></i>
+                                    </div>
+                                    <div class="field">
+
+                                        <input type="password" class="email" placeholder="Password">
+                                        <i class="fa-solid fa-lock"></i>
+                                    </div>
+                                    <div class="field">
+
+                                        <input type="text" class="email" placeholder="Institution/Organization">
+                                        <i class="fa-solid fa-users"></i>
+                                    </div>
+                                    <div class="field submit-button">
+
+                                        <input type="submit" class=" submit-form-button" value="Sign up">
+                                    </div>
+                                    <div>
+                                        <div class="z-line-before-hr">
+                                            <hr class="line-after-submit-button">
+                                            <span>or</span>
+                                        </div>
+                                    </div>
+                                    <div class="z-other-login-methods">
+                                        <div class="z-other-login-methods-inner">
+                                            <div class="z-other-login-methods-items">
+                                                <div class="z-other-methods-inner google-login">
+                                                    <i class="border"></i>
+                                                    <span>Google</span>
+                                                </div>
+                                            </div>
+                                            <div class="z-other-login-methods-items">
+                                                <div class="z-other-methods-inner facebook-login">
+                                                    <i class="border"></i>
+                                                    <span>Facebook</span>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="z-other-login-methods-items">
+                                                <div class="z-other-methods-inner linkdin-login">
+                                                    <i class="border"></i>
+                                                    <span>Linkdin</span>
+                                                </div>
+                                            </div>
+                                            <div class="z-other-login-methods-items">
+                                                <div class="z-other-methods-inner github-login">
+                                                    <i class="border"></i>
+                                                    <span>Github</span>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="z-why-account">
+                                        <div class="z-ccount-inner">
+                                            <h4>Why Create an Account?</h4>
+                                        </div>
+                                    </div>
+                                    <div class="z-why-account">
+                                        <div class="z-ccount-agremrnt">
+                                            <span>By creating this account, you agree to our </span>
+                                            <a href="#">Privacy Policy </a>
+                                            &
+                                            <a href="#">Cookie Policy. </a>
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function () {
+
+        $('.z-tab-form a').click(function () {
+            var check = $('.z-tab-form a').removeClass('active');
+
+
+            $(this).addClass('active');
+
+        });
+$('.z-close-form').click(function(){
+
+// $('.z-form-content').slideUp("slow");
+$('.z-form-upper-div').css("display","none");
+console.log(this)
+});
+$('button').click(function(){
+    // $('.z-form-upper-div').slideDown("slow");
+    // $('.z-form-content').slideDown("slow");
+    $('.z-form-upper-div').css("display","block");
+});
+
+$('.email').focusin(function(){
+$(this).css("border-color","red!IMPORTANT");  
+});
+
+$('.email').focusout(function(){
+$(this).parent().css("border-color","blue");
+});
+    });
+   
+</script>
+
+</html>

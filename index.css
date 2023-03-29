@@ -1,0 +1,341 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.z-form-upper-outer-div {
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+}
+
+@font-face {
+    font-family: sophia;
+    src: url('sofiapro-light.otf');
+}
+
+button:hover {
+    color: red;
+}
+
+.z-form-inner {
+
+    position: fixed;
+    top: 50%;
+    width: 100%;
+ 
+    background-color: white;
+    max-width: 542px;
+    height: max-content; 
+     max-height: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+}
+
+
+
+.z-form-contact {
+
+    padding: 20px 30px 40px 30px
+}
+
+.z-form-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10px;
+    overflow: auto;
+}
+
+.z-form-upper-outer {
+
+    padding: 28px 20px;
+}
+
+.z-tab-form a {
+    width: 50%;
+    text-align: center;
+
+    display: block;
+    display: inline-block;
+    Color: rgb(85, 85, 85);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    padding: 16px 0px;
+    width: 100%;
+    background-color: rgb(224, 225, 226);
+    opacity: .5;
+
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+
+
+}
+.z-form-upper-div{
+    display: none;
+    transition: 1s all;
+   
+}
+.active {
+    opacity: 1 !important;
+    background-color: white !important;
+    color: black;
+    border-top: 2px solid green;
+    margin: 0 !important;
+}
+
+.email:focus+i {
+    opacity: 1 !important;
+    color: black !important;
+    transition: .5s;
+
+}
+
+.email:focus {
+
+    opacity: 1 !important;
+    border: none;
+
+
+
+}
+
+.z-form-tab-button:active {
+    background-color: rgb(255, 255, 255);
+}
+
+.z-form-upper-outer-inner {
+
+    border-bottom: 1px solid rgb(212, 212, 213);
+    border-right: 1px solid rgb(212, 212, 213);
+    border-left: 1px solid rgb(212, 212, 213);
+}
+
+.z-tab-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+.field {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.4px solid rgba(0, 0, 0, 0.438);
+    margin-bottom: 15px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+
+
+    position: relative;
+
+}
+
+.field i {
+
+    color: black;
+    font-size: 20px;
+    padding: 5px 0 5px 5px;
+    position: absolute;
+    opacity: .5;
+
+}
+
+.email {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-left: 35px;
+    opacity: .5;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+
+
+}
+
+.submit-form-button {
+    background-color: rgb(30, 175, 92) !important;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 20px !important;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    cursor: pointer;
+    background-image: linear-gradient(180deg, #2bbe60, #0f9d58) !important;
+}
+
+.submit-button {
+    opacity: 1 !important;
+    cursor: pointer;
+}
+
+.line-after-submit-button {
+    margin: 0 20px;
+    color: black;
+}
+
+.z-line-before-hr {
+    position: relative;
+}
+
+.z-line-before-hr span {
+    position: absolute;
+    left: 50%;
+    top: -10px;
+    padding: 0 10px;
+    background-color: white;
+    transform: translateX(-50%);
+    font-family: sophia;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.z-other-login-methods {
+    margin-top: 15px;
+}
+
+.z-other-login-methods-items {
+    width: 50%;
+
+}
+
+.z-other-login-methods-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.z-other-methods-inner {
+    position: relative;
+
+    text-align: center;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    font-size: 14px;
+}
+
+.z-other-methods-inner span {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    display: inline-block;
+    padding: 7px 0;
+}
+
+.google-login {
+    background-color: rgb(221, 75, 57);
+    margin: 10px 7px 0px 0;
+    border: 1px solid black;
+
+
+}
+
+.facebook-login {
+    background-color: rgb(59, 89, 152);
+    margin: 10px 0px 0px 10px;
+    border: 1px solid black;
+}
+
+.github-login {
+    background-color: rgb(224, 225, 226);
+    margin: 10px 0px 0px 10px;
+    border: 1px solid black;
+
+
+}
+
+.github-login span {
+
+    color: rgb(90, 90, 90) !important;
+
+}
+
+.linkdin-login {
+    background-color: rgb(31, 136, 190);
+    margin: 10px 7px 0px 0;
+    border: 1px solid black;
+}
+
+.border {
+    min-width: 30px;
+    border-right: 1px solid black;
+    left: 5%;
+    position: absolute;
+    height: 100%;
+}
+
+.z-ccount-inner {
+    color: rgb(30, 175, 92);
+    text-align: center;
+    padding-top: 20px;
+    font-family: sophia !important;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.z-close-form {
+    position: absolute;
+    right: 18px;
+    top: 4px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.438);
+    cursor: pointer;
+    background-color: white;
+
+}
+
+.z-ccount-agremrnt {
+    text-align: center;
+    padding-top: 10px;
+    font-family: sophia !important;
+    font-weight: 400;
+    font-size: 11px;
+    color: #999;
+}
+
+.z-ccount-agremrnt a {
+
+
+
+    font-weight: 600;
+    font-size: 12px;
+    color: #0f9d58;
+    text-decoration: none;
+
+}
+.z-form-inner::-webkit-scrollbar{
+    display: none;
+}
+.z-form-content::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: red; /* or add it to the track */
+  }
